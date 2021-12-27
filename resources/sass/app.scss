@@ -1,0 +1,378 @@
+$mainTitleHeight: 56px;
+$mainSideWidth: 130px;
+$loginFormWidth: 360px;
+$formImageWidth: 150px;
+$formImageWidth2: 100px;
+$bodyMenuHeight: 46px;
+$bodyTitleHeight: 64px;
+
+$mainColor: #0097A7;
+$textColor: #FFF;
+//背景顏色
+$BackWhiteColor: #FFFFFF;
+$BackWhiteColor2: #FAFAFA;
+$lightgrayColor: #A7A7A7;
+$lightgrayColor2: #E8E8E8;
+$BackContentColor: #D2E624;
+
+$mainFont: 24px;
+$mainFont2: 16px;
+$toolBarFont: 16px;
+$loginTitleFont: 32px;
+$formMainFont: 20px;
+$formTextBoxTextFont: 16px;
+$formIconFont: 14px;
+$formTextBoxBorderFont: 40px;
+$formTextBoxBorderFont2: 24px;
+$bodyTitleFont: 24px;
+$bodyTitleFont2: 20px;
+
+$mainLeftMargin: 24px;
+$bodyFormMargin: 16px;
+$bodyFormMargin1: 20px;
+$bodyFormMargin2: 12px;
+$bodyFormMargin3: 30px;
+$buttonTopMargin: 10px;
+$bodyFormRowMargin: 40px;
+$bodyFormPadding1: 24px;
+$bodyFormPadding2: 12px;
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+//上面Bar的樣式
+.toolbar_section{
+    height: $mainTitleHeight;
+    background: $mainColor;
+
+    .toolbar_title{
+        line-height: $mainTitleHeight;
+        font-size: $mainFont;
+        margin-left: $mainLeftMargin;
+        color: $textColor;
+    }
+
+    .toolbar_title2{
+        line-height: $mainTitleHeight;
+        font-size: $mainFont2;
+        margin-left: $mainLeftMargin;
+        color: $textColor;
+    }
+
+    .toolbar_right{
+        float: right;
+        height: $mainTitleHeight;
+        margin-right: 24px;
+        font-size: $toolBarFont;
+    }
+
+    .toolbar_text{
+        margin-left: 12px;
+        color: $textColor;
+        line-height: $mainTitleHeight;
+    }
+}
+
+//註冊登入表單
+.login_form{
+    width: $loginFormWidth;
+    margin: auto;
+
+    .login_title{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: $loginTitleFont;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .login_label{
+        font-size: $formMainFont;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .login_textbox{
+        font-size: $formTextBoxTextFont;
+        line-height: $formTextBoxBorderFont;
+        margin-bottom: 20px;
+        .form_textbox{
+            padding-left: 12px;
+            width: 100%;
+        }
+    }
+
+    .login_error {
+        font-size: $formTextBoxTextFont;
+    }
+
+    .btn_group{
+        margin-top: $buttonTopMargin;
+        text-align: right;
+        .btn_login{
+            font-size: $formMainFont;
+            height: 40px;
+            width: 120px;
+            color: $textColor;
+            box-shadow: none;
+            border-radius: 3px;
+            border-width: 0;
+        }
+    }
+}
+
+//一般表單
+.normal_form{
+    width: 100%;
+    margin: auto;
+
+    .form_title{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: $loginTitleFont;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .form_label{
+        font-size: $formMainFont;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .form_textbox_region{
+        font-size: $formTextBoxTextFont;
+        line-height: $formTextBoxBorderFont;
+        margin-bottom: 20px;
+        .form_textbox{
+            padding-left: 12px;
+            width: 100%;
+        }
+
+        .form_select {
+            height: calc(#{$formTextBoxBorderFont} + 4px);
+            padding-left: 12px;
+            width: 100%;
+        }
+
+        .form_textarea{
+            line-height: $formTextBoxBorderFont2;
+            padding-left: 12px;
+            width: 100%;
+            height: calc(#{$formTextBoxBorderFont2}*8);
+        }
+    }
+
+    .form_error {
+        text-align: left;
+        font-size: $formTextBoxTextFont;
+    }
+
+    .btn_form{
+        font-size: $formMainFont;
+        height: 40px;
+        width: 120px;
+        color: $textColor;
+        box-shadow: none;
+        border-radius: 3px;
+        border-width: 0;
+    }
+    
+    .btn_group{
+        margin-top: $buttonTopMargin;
+        text-align: right;
+    }
+
+    .btn_group_middle{
+        text-align: center;
+    }
+}
+
+
+.background_white {
+    min-height: calc(100vh - #{$mainTitleHeight});
+    background: $BackWhiteColor;
+}
+
+.background_white2 {
+    min-height: calc(100vh - #{$mainTitleHeight});
+    background: $BackWhiteColor2;
+}
+
+.main_region
+{
+    padding: 10px;
+}
+
+.col-10
+{
+    width: 10%;
+    float: left;
+
+    .circle_img {
+        margin: auto;
+        cursor: pointer;
+        width: calc(9vw - 10px - 2px);
+        height: calc(9vw - 10px - 2px);
+        border-radius: 100%;
+    }
+}
+
+.div_clear
+{
+    clear:both;
+}
+
+.body_title {
+    font-size: $bodyTitleFont;
+    font-weight: 600;
+    margin-top: $bodyFormMargin1;
+    margin-bottom: $bodyFormMargin2;
+}
+
+.body_content {
+    font-size: $formMainFont;
+    background-color: $BackContentColor;
+    margin-top: $bodyFormMargin2;
+    margin-bottom: $bodyFormMargin3;
+    padding-top: $bodyFormPadding2;
+    padding-bottom: $bodyFormPadding2;
+    border-radius: 5px;
+}
+
+.body_form_title {
+    font-size: $bodyTitleFont2;
+    font-weight: 600;
+}
+
+.body_img {
+    width: $formImageWidth2;
+    height: $formImageWidth2;
+    border-radius: 100%;
+}
+
+.body_form_row {
+    margin-top: $bodyFormRowMargin;
+}
+
+.body_show_region {
+    min-height: calc(100vh - #{$bodyFormMargin * 2} - #{$bodyFormMargin1} - #{$bodyFormMargin} - #{$bodyTitleFont} - #{$mainTitleHeight});
+    width: calc(100% - #{$bodyFormMargin});
+    margin: 0;
+    margin-top: $bodyFormMargin;
+    margin-bottom: $bodyFormMargin;
+    padding: $bodyFormPadding1;
+    border: solid 1px $lightgrayColor2;
+    position: relative;
+
+    &.menu {
+        min-height: calc(100vh - #{$bodyFormMargin * 2} - #{$bodyFormMargin1} - #{$bodyFormMargin} - #{$bodyTitleFont} - #{$mainTitleHeight} - #{$bodyMenuHeight} - #{$bodyTitleHeight});
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: 20px;
+        width: calc(100% - #{$bodyFormPadding1 * 2});
+
+        .center_button_region {
+            text-align:center;
+        }
+    }
+}
+
+
+/****************圖片上傳相關****************/
+
+.inputfile
+{
+    width: 0.1px; 
+    height: 0.1px; 
+    opacity: 0; 
+    overflow: hidden; 
+    position: absolute; 
+    z-index: -1;
+}
+
+.inputfile + label 
+{
+    color: white;
+    background-color: #EF5350;
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+.inputfile + label:hover 
+{
+    background-color: #D2302E;
+    cursor: pointer;
+}
+
+.upload_img {
+    width: $formImageWidth;
+    height: $formImageWidth;
+    border-radius: 100%;
+}
+
+td.right {
+    text-align: right;
+}
+
+/****************改變Bootstrap樣式****************/
+
+
+.container {
+    width: 100vw;
+    padding: 0;
+    background: $BackWhiteColor2;
+}
+
+//排版
+.form.col-sm-1 {
+    padding: 0;
+    min-width: $mainSideWidth;
+}
+
+.form.col-sm-11 {
+    max-width: calc(100vw - #{$mainSideWidth});
+    max-height: calc(100vh - #{$mainTitleHeight});
+    overflow-y: auto;
+}
+
+//選單
+.nav-pills>li{
+
+    &>a{
+        border-radius: 0;
+        color: $lightgrayColor;
+        font-size: $formTextBoxTextFont;
+
+        &:hover{
+            background: #E9E9E9;
+        }
+    }
+
+    &.active{
+        border-right: solid 4px $mainColor;
+
+        &>a{
+            color: $mainColor;
+            background: transparent;
+
+            &:hover{
+                color: $mainColor;
+                background: #E9E9E9;
+            }
+        }
+    }
+}
+
+/****************改變CKEditor樣式****************/
+
+.ck-content {
+    min-height: 200px;
+}
